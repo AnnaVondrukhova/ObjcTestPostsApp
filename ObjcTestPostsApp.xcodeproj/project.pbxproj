@@ -14,10 +14,14 @@
 		C1F79C8D24C033430022E012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1F79C8C24C033430022E012 /* Assets.xcassets */; };
 		C1F79C9024C033430022E012 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1F79C8E24C033430022E012 /* LaunchScreen.storyboard */; };
 		C1F79C9324C033430022E012 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F79C9224C033430022E012 /* main.m */; };
+		C1F79C9B24C03F730022E012 /* AddPostVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F79C9A24C03F730022E012 /* AddPostVC.m */; };
+		C1F79CA124C042CE0022E012 /* DataService.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F79CA024C042CE0022E012 /* DataService.m */; };
+		C1F79CA524C045CD0022E012 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F79CA424C045CD0022E012 /* Post.m */; };
+		C1F79CA824C07A790022E012 /* PostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C1F79CA724C07A780022E012 /* PostCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C1F79C7D24C0333E0022E012 /* MyHood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHood.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1F79C7D24C0333E0022E012 /* ObjcTestPostsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjcTestPostsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F79C8024C0333F0022E012 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C1F79C8124C0333F0022E012 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C1F79C8324C0333F0022E012 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
@@ -29,6 +33,14 @@
 		C1F79C8F24C033430022E012 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1F79C9124C033430022E012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1F79C9224C033430022E012 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C1F79C9924C03F730022E012 /* AddPostVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddPostVC.h; sourceTree = "<group>"; };
+		C1F79C9A24C03F730022E012 /* AddPostVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddPostVC.m; sourceTree = "<group>"; };
+		C1F79CA024C042CE0022E012 /* DataService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataService.m; sourceTree = "<group>"; };
+		C1F79CA224C042DB0022E012 /* DataService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataService.h; sourceTree = "<group>"; };
+		C1F79CA324C045CD0022E012 /* Post.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		C1F79CA424C045CD0022E012 /* Post.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		C1F79CA624C07A780022E012 /* PostCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostCell.h; sourceTree = "<group>"; };
+		C1F79CA724C07A780022E012 /* PostCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +57,7 @@
 		C1F79C7424C0333E0022E012 = {
 			isa = PBXGroup;
 			children = (
-				C1F79C7F24C0333E0022E012 /* MyHood */,
+				C1F79C7F24C0333E0022E012 /* ObjcTestPostsApp */,
 				C1F79C7E24C0333E0022E012 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,35 +65,75 @@
 		C1F79C7E24C0333E0022E012 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C1F79C7D24C0333E0022E012 /* MyHood.app */,
+				C1F79C7D24C0333E0022E012 /* ObjcTestPostsApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C1F79C7F24C0333E0022E012 /* MyHood */ = {
+		C1F79C7F24C0333E0022E012 /* ObjcTestPostsApp */ = {
+			isa = PBXGroup;
+			children = (
+				C1F79C9F24C03FA50022E012 /* Model */,
+				C1F79C9E24C03F9F0022E012 /* View */,
+				C1F79C9D24C03F960022E012 /* Controller */,
+				C1F79C9C24C03F7B0022E012 /* Service */,
+				C1F79C8C24C033430022E012 /* Assets.xcassets */,
+				C1F79C9124C033430022E012 /* Info.plist */,
+				C1F79C9224C033430022E012 /* main.m */,
+			);
+			path = ObjcTestPostsApp;
+			sourceTree = "<group>";
+		};
+		C1F79C9C24C03F7B0022E012 /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				C1F79C8024C0333F0022E012 /* AppDelegate.h */,
 				C1F79C8124C0333F0022E012 /* AppDelegate.m */,
 				C1F79C8324C0333F0022E012 /* SceneDelegate.h */,
 				C1F79C8424C0333F0022E012 /* SceneDelegate.m */,
+				C1F79CA024C042CE0022E012 /* DataService.m */,
+				C1F79CA224C042DB0022E012 /* DataService.h */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C1F79C9D24C03F960022E012 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				C1F79C8624C0333F0022E012 /* ViewController.h */,
 				C1F79C8724C0333F0022E012 /* ViewController.m */,
-				C1F79C8924C0333F0022E012 /* Main.storyboard */,
-				C1F79C8C24C033430022E012 /* Assets.xcassets */,
-				C1F79C8E24C033430022E012 /* LaunchScreen.storyboard */,
-				C1F79C9124C033430022E012 /* Info.plist */,
-				C1F79C9224C033430022E012 /* main.m */,
+				C1F79C9924C03F730022E012 /* AddPostVC.h */,
+				C1F79C9A24C03F730022E012 /* AddPostVC.m */,
 			);
-			path = MyHood;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		C1F79C9E24C03F9F0022E012 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1F79C8924C0333F0022E012 /* Main.storyboard */,
+				C1F79C8E24C033430022E012 /* LaunchScreen.storyboard */,
+				C1F79CA624C07A780022E012 /* PostCell.h */,
+				C1F79CA724C07A780022E012 /* PostCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C1F79C9F24C03FA50022E012 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1F79CA324C045CD0022E012 /* Post.h */,
+				C1F79CA424C045CD0022E012 /* Post.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C1F79C7C24C0333E0022E012 /* MyHood */ = {
+		C1F79C7C24C0333E0022E012 /* ObjcTestPostsApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C1F79C9624C033430022E012 /* Build configuration list for PBXNativeTarget "MyHood" */;
+			buildConfigurationList = C1F79C9624C033430022E012 /* Build configuration list for PBXNativeTarget "ObjcTestPostsApp" */;
 			buildPhases = (
 				C1F79C7924C0333E0022E012 /* Sources */,
 				C1F79C7A24C0333E0022E012 /* Frameworks */,
@@ -91,9 +143,9 @@
 			);
 			dependencies = (
 			);
-			name = MyHood;
+			name = ObjcTestPostsApp;
 			productName = MyHood;
-			productReference = C1F79C7D24C0333E0022E012 /* MyHood.app */;
+			productReference = C1F79C7D24C0333E0022E012 /* ObjcTestPostsApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -110,7 +162,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C1F79C7824C0333E0022E012 /* Build configuration list for PBXProject "MyHood" */;
+			buildConfigurationList = C1F79C7824C0333E0022E012 /* Build configuration list for PBXProject "ObjcTestPostsApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -123,7 +175,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C1F79C7C24C0333E0022E012 /* MyHood */,
+				C1F79C7C24C0333E0022E012 /* ObjcTestPostsApp */,
 			);
 		};
 /* End PBXProject section */
@@ -149,7 +201,11 @@
 				C1F79C8824C0333F0022E012 /* ViewController.m in Sources */,
 				C1F79C8224C0333F0022E012 /* AppDelegate.m in Sources */,
 				C1F79C9324C033430022E012 /* main.m in Sources */,
+				C1F79CA824C07A790022E012 /* PostCell.m in Sources */,
+				C1F79CA124C042CE0022E012 /* DataService.m in Sources */,
+				C1F79C9B24C03F730022E012 /* AddPostVC.m in Sources */,
 				C1F79C8524C0333F0022E012 /* SceneDelegate.m in Sources */,
+				C1F79CA524C045CD0022E012 /* Post.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +347,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LV8EDW43XJ;
-				INFOPLIST_FILE = MyHood/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ObjcTestPostsApp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +364,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LV8EDW43XJ;
-				INFOPLIST_FILE = MyHood/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ObjcTestPostsApp/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,7 +378,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C1F79C7824C0333E0022E012 /* Build configuration list for PBXProject "MyHood" */ = {
+		C1F79C7824C0333E0022E012 /* Build configuration list for PBXProject "ObjcTestPostsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C1F79C9424C033430022E012 /* Debug */,
@@ -331,7 +387,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C1F79C9624C033430022E012 /* Build configuration list for PBXNativeTarget "MyHood" */ = {
+		C1F79C9624C033430022E012 /* Build configuration list for PBXNativeTarget "ObjcTestPostsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C1F79C9724C033430022E012 /* Debug */,
